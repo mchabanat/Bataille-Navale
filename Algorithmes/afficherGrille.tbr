@@ -1,0 +1,121 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>afficherGrille</nom>
+  <date_creation>5/1/2022 09:44</date_creation>
+  <Elements>
+    <Action>
+      <Position>450;120</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>tableau, nbLigne, nbColonne</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Procédure afficherGrille</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>607;251</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Affichage de la grille du jeu</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>656.5;349.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>pour i allant de 0 à &#xd;
+(nbLigne - 1)</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>286;441</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>i</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Affichage des indices en vertical (1, 2, ..., 9) </Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>346;515</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>i</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher i + 1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Iteration>
+                  <Position>682.5;446.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>pour j allant de 0 à &#xd;
+(nbColonne - 1)</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>524;530</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>tableau, i, j</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Affichage d'une case du tableau</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>636;605</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Afficher le tableau à l'indice &#xd;
+tableau[i][j]</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>859;529</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Passer à la ligne</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+                <Action>
+                  <Position>917;440</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Passer à la ligne</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>345;252</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Affichage des indices en horizontal (A, B, ..., I) (Première ligne)</Titre>
+          <DetailsVisible>0</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

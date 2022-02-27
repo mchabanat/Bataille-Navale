@@ -1,0 +1,65 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>19/11/2021 10:06</date_creation>
+  <Elements>
+    <Action>
+      <Position>606;117</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>coordonneeX
+coordonneeY</PreAssertion>
+      <PostAssertion>indice</PostAssertion>
+      <Titre>coordonneeVersIndice</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>321;278</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>indiceFinal
+coordonneeX
+coordonneeY</PreAssertion>
+          <PostAssertion>indiceFinal</PostAssertion>
+          <Titre>Déterminer les point x et y de l'indice à partir de la coordonnee</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>234;365</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>indiceFinal
+coordonneeX</PreAssertion>
+              <PostAssertion>indiceX</PostAssertion>
+              <Titre>indice.coordX ← int(coordonneeX)-65</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>428;436</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>indiceFinal
+coordonneeY</PreAssertion>
+              <PostAssertion>indiceY</PostAssertion>
+              <Titre>indicee.coordY ← int(indiceY)-49</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>800;274</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>indiceFinal</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Retourner indiceFinal</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

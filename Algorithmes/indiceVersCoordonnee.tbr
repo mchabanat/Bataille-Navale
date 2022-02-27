@@ -1,0 +1,65 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>19/11/2021 09:49</date_creation>
+  <Elements>
+    <Action>
+      <Position>665;158</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>indiceX
+indiceY</PreAssertion>
+      <PostAssertion>coordonnee</PostAssertion>
+      <Titre>indiceVersCoordonnee</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>337;315</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>coordonneeFinal
+indiceX
+indiceY</PreAssertion>
+          <PostAssertion>coordonneeFinal</PostAssertion>
+          <Titre>Déterminer les point x et y de la coordonnée à partir d'indice</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>144;464</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>coordonneeFinal
+indiceX</PreAssertion>
+              <PostAssertion>coordonneeFinal</PostAssertion>
+              <Titre>coordonneeFinal.coordX ← char(indiceX+65)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>410;531</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>coordonneeFinal
+indiceY</PreAssertion>
+              <PostAssertion>coordonneeFinal</PostAssertion>
+              <Titre>coordonneeFinal.coordY ← char(indiceY+49)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>841;316</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>coordonneeFinal</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Retourner coordonneeFinal</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
