@@ -6,7 +6,7 @@ Dans le cadre d'un projet en Algorithmique et programmation, par équipes de deu
 
 Nous nous sommes servis d'une bibliothèque de mise en forme lors de l'execution du programme.
 Cette bibliothèque, nommée Game-Tools a été créée par notre professeur d'Algorithmique et de programmation, 
-M. Patrick ETCHEVERRY alias [@patrick-etcheverry](https://github.com/patrick-etcheverry).
+M. Patrick ETCHEVERRY ([@patrick-etcheverry](https://github.com/patrick-etcheverry)).
 
 ## Contenu 
 
@@ -20,5 +20,5 @@ Notre projet contient :
 
 Ce projet a été réalisé par :
 
-* **Arthur LE MENN** alias [@Arthur-Le-M](https://github.com/Arthur-Le-M)
-* **Matis CHABANAT** alias [@mchabanat](https://github.com/mchabanat)
+* **Arthur LE MENN** ([@Arthur-Le-M](https://github.com/Arthur-Le-M))
+* **Matis CHABANAT** ([@mchabanat](https://github.com/mchabanat))
